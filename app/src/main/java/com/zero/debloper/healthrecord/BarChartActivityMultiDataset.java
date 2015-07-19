@@ -48,6 +48,7 @@ public class BarChartActivityMultiDataset extends DemoBase implements OnSeekBarC
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_barchart);
 
+/*
         tvX = (TextView) findViewById(R.id.tvXMax);
         tvY = (TextView) findViewById(R.id.tvYMax);
 
@@ -56,6 +57,7 @@ public class BarChartActivityMultiDataset extends DemoBase implements OnSeekBarC
 
         mSeekBarY = (SeekBar) findViewById(R.id.seekBar2);
         mSeekBarY.setOnSeekBarChangeListener(this);
+*/
 
         mChart = (BarChart) findViewById(R.id.chart1);
         mChart.setOnChartValueSelectedListener(this);
@@ -87,11 +89,11 @@ public class BarChartActivityMultiDataset extends DemoBase implements OnSeekBarC
         tf = Typeface.createFromAsset(getAssets(), "OpenSans-Regular.ttf");
 
         Legend l = mChart.getLegend();
-        l.setPosition(Legend.LegendPosition.RIGHT_OF_CHART_INSIDE);
+        l.setPosition(Legend.LegendPosition.BELOW_CHART_LEFT);
         l.setTypeface(tf);
         l.setYOffset(0f);
         l.setYEntrySpace(0f);
-        l.setTextSize(8f);
+        l.setTextSize(15f);
 
         XAxis xl = mChart.getXAxis();
         xl.setTypeface(tf);

@@ -21,6 +21,12 @@ public abstract class DemoBase extends FragmentActivity {
             "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dec"
     };
 
+    protected String[] mDays = new String[]{
+            "Today", "Yesterday", "Date3", "Date4", "Date5", "Date6", "Date7"
+    };
+
+    protected float[] mBP = new float[]{80, 90, 110, 100, 130, 160, 120};
+
     protected String[] mParties = new String[]{
             "Party A", "Party B", "Party C", "Party D", "Party E", "Party F", "Party G", "Party H",
             "Party I", "Party J", "Party K", "Party L", "Party M", "Party N", "Party O", "Party P",
